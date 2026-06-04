@@ -3,7 +3,7 @@
 Honest, data-backed discoveries from building an autonomous trading-intelligence **firm** on Mantle.
 **Every finding traces to a real run or probe** — we publish what *doesn't* work too, because honesty is the product.
 
-See [`FINDINGS.md`](./FINDINGS.md) for the full list (**21** findings):
+See [`FINDINGS.md`](./FINDINGS.md) for the full list (**22** findings):
 
 - 🐋 **Smart money & whales** — the Mantle reality (it's genuinely sparse; we don't fake it)
 - 📊 **Alpha & strategies** — what's real, what isn't. The one validated edge: **OI-Contrarian on MNT, +28.9% OOS**

@@ -83,6 +83,9 @@ HeliQuant now onboards *any* asset through a hypothesis library (open-interest, 
 **21. Validation isn't just claimed — it's anchored on Mantle.**
 When an edge clears HeliQuant's gate, its **validation record** (asset, edge, p_win, payoff, sample_n, OOS-ROI, and the firm's ERC-8004 tokenId) is hashed (SHA-256) and **anchored in a Mantle Sepolia transaction**. MNT's OI-contrarian edge is anchored live — tx `0x5ae63fd1…`, **block 39,509,049, status SUCCESS**; the transaction's calldata *is* the record hash, recomputable by anyone from the public record. So "validated" is **auditable, not asserted**: earn the edge → graduate it → record it on-chain. *(Honest about what it is: a tamper-proof proof-of-existence hash — not a trade, not capital moving.)*
 
+**22. We tested ML too — and it didn't get a free pass.**
+Honoring the idea of "an ML model per asset," we trained **RandomForest and XGBoost** on MNT's engineered features to predict the 24h direction, then traded their high-confidence calls out-of-sample under the **same cost-aware gate** as every other edge. Result: **~51% accuracy** (barely above a coin-flip at a 24h horizon) and **−50% to −62% OOS net of fees** — both **abstain**. ML is welcome as a *hypothesis*, but it must earn the bar like everything else; on MNT it doesn't, so the validated edge stays the transparent **OI-contrarian rule, not a black box**. *(Accuracy ≠ money-weighted profit — Finding 5, now confirmed with real models. ML plugs in as just another signal source, judged by the same evidence.)*
+
 ---
 
 *HeliQuant's edge isn't a magic indicator — it's rigor, multi-source integration, Mantle-native verifiability, and brutal honesty. Verified by real runs; auditable on-chain.*
