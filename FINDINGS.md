@@ -77,6 +77,9 @@ HeliQuant's high-conviction mode (fractional-Kelly, capped at **3% risk / 5× le
 **19. 39% win rate, still +24% out-of-sample — payoff over hit-rate, on a funded account.**
 Funded with **$1,000** and trading the validated edge **out-of-sample** with live AGGRESSIVE sizing, HeliQuant won only **13 of 33 trades (39.4%)** — and still finished at **$1,243.81 (+24.4%, −11.5% max drawdown)**, net of fees on real Bybit MNTUSDT data. The profit comes from **payoff asymmetry** (winners far larger than losers), not from being right often. An honest edge doesn't need a high hit-rate; it needs positive expectancy that survives costs on unseen data. *(The same edge, un-leveraged, returns +28.9% / 34 trades — see Finding 11.)*
 
+**20. We built an asset-onboarding lab — and it held back a +92% candidate.**
+HeliQuant now onboards *any* asset through a hypothesis library (open-interest, price-momentum, funding, order-flow imbalance) tested under one gate: **cost-aware out-of-sample + 5-fold walk-forward + an outlier-robustness check** (drop the single best fold — the edge must *still* hold). Scanning **6 assets × 4 hypotheses = 24 tests**, only **MNT's OI-contrarian** clears it robustly (4/5 folds positive, +28.9% OOS). **HYPE's order-flow-contrarian flashed +92% OOS** — but ~65% of that came from a single fold; drop it and the edge collapses to **+1.9%**. So we **held HYPE back**: a tantalizing candidate, *not* a validated edge. The registry grows only when an edge is *earned across folds* — never when one window dazzles. This is the self-learning loop's honest spine: new assets (and new hypotheses, incl. ML) must out-earn the gate.
+
 ---
 
 *HeliQuant's edge isn't a magic indicator — it's rigor, multi-source integration, Mantle-native verifiability, and brutal honesty. Verified by real runs; auditable on-chain.*
