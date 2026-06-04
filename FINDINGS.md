@@ -86,6 +86,9 @@ When an edge clears HeliQuant's gate, its **validation record** (asset, edge, p_
 **22. We tested ML too — and it didn't get a free pass.**
 Honoring the idea of "an ML model per asset," we trained **RandomForest and XGBoost** on MNT's engineered features to predict the 24h direction, then traded their high-confidence calls out-of-sample under the **same cost-aware gate** as every other edge. Result: **~51% accuracy** (barely above a coin-flip at a 24h horizon) and **−50% to −62% OOS net of fees** — both **abstain**. ML is welcome as a *hypothesis*, but it must earn the bar like everything else; on MNT it doesn't, so the validated edge stays the transparent **OI-contrarian rule, not a black box**. *(Accuracy ≠ money-weighted profit — Finding 5, now confirmed with real models. ML plugs in as just another signal source, judged by the same evidence.)*
 
+**23. Self-learning, proven on LIVE-fetched data — and it still refused to chase the flip.**
+We fetched **fresh HYPE market data** (Bybit, new bars the edge had never seen) and re-ran the full gate — genuinely new evidence, not a replay. HYPE's order-flow-contrarian edge **crossed**: **+142% OOS, walk-forward robust** — where days earlier it was *fragile*. So the loop **responded to evidence**. But it did **NOT** graduate it: a *just-crossed*, **regime-dependent** edge (HYPE's been in a parabolic bull — fading sell-pressure = buying dips, which flatters in a bull) goes on **PROBATION**, requiring confirmation across **consecutive NEW-DATA cycles** before any live capital (re-running the *same* data doesn't count — anti-overfit). The validated registry stays **MNT-only**. *Promote on evidence, confirm before you trust — that's the line between self-learning and self-deception.*
+
 ---
 
 *HeliQuant's edge isn't a magic indicator — it's rigor, multi-source integration, Mantle-native verifiability, and brutal honesty. Verified by real runs; auditable on-chain.*
