@@ -80,6 +80,9 @@ Funded with **$1,000** and trading the validated edge **out-of-sample** with liv
 **20. We built an asset-onboarding lab — and it held back a +92% candidate.**
 HeliQuant now onboards *any* asset through a hypothesis library (open-interest, price-momentum, funding, order-flow imbalance) tested under one gate: **cost-aware out-of-sample + 5-fold walk-forward + an outlier-robustness check** (drop the single best fold — the edge must *still* hold). Scanning **6 assets × 4 hypotheses = 24 tests**, only **MNT's OI-contrarian** clears it robustly (4/5 folds positive, +28.9% OOS). **HYPE's order-flow-contrarian flashed +92% OOS** — but ~65% of that came from a single fold; drop it and the edge collapses to **+1.9%**. So we **held HYPE back**: a tantalizing candidate, *not* a validated edge. The registry grows only when an edge is *earned across folds* — never when one window dazzles. This is the self-learning loop's honest spine: new assets (and new hypotheses, incl. ML) must out-earn the gate.
 
+**21. Validation isn't just claimed — it's anchored on Mantle.**
+When an edge clears HeliQuant's gate, its **validation record** (asset, edge, p_win, payoff, sample_n, OOS-ROI, and the firm's ERC-8004 tokenId) is hashed (SHA-256) and **anchored in a Mantle Sepolia transaction**. MNT's OI-contrarian edge is anchored live — tx `0x5ae63fd1…`, **block 39,509,049, status SUCCESS**; the transaction's calldata *is* the record hash, recomputable by anyone from the public record. So "validated" is **auditable, not asserted**: earn the edge → graduate it → record it on-chain. *(Honest about what it is: a tamper-proof proof-of-existence hash — not a trade, not capital moving.)*
+
 ---
 
 *HeliQuant's edge isn't a magic indicator — it's rigor, multi-source integration, Mantle-native verifiability, and brutal honesty. Verified by real runs; auditable on-chain.*
