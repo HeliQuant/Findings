@@ -6,7 +6,7 @@ Honest, data-backed discoveries from building an autonomous trading-intelligence
 See [`FINDINGS.md`](./FINDINGS.md) for the full list (**23** findings):
 
 - 🐋 **Smart money & whales** — the Mantle reality (it's genuinely sparse; we don't fake it)
-- 📊 **Alpha & strategies** — what's real, what isn't. The one validated edge: **OI-Contrarian on MNT, +28.9% OOS**
+- 📊 **Alpha & strategies** — what's real, what isn't. We validated an edge (**OI-Contrarian on MNT, +28.9% OOS** on its original window), then our own self-learning caught it **decaying on fresh data** and retired it — the registry is now empty. The discipline that retires a dead edge *is* the edge.
 - ⚙️ **Execution & risk** — gated tickets (R:R ≥ 2), AGGRESSIVE sizing *earned by data*, on-chain decision ledger
 - 🔬 **Method** — honesty-by-design; a firm of seven AI agents whose decisions are anchored on Mantle
 
